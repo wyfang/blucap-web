@@ -1,42 +1,34 @@
-# Hydrogen template: Hello World
+# Blucap Web
 
-Hydrogen is Shopify’s stack for headless commerce. Hydrogen is designed to dovetail with [Remix](https://remix.run/), Shopify’s full stack web framework. This template contains a **minimal setup** of components, queries and tooling to get started with Hydrogen.
+基于 Shopify Hydrogen 与 Remix 的无头电商前端模板。
 
-[Check out Hydrogen docs](https://shopify.dev/custom-storefronts/hydrogen)
-[Get familiar with Remix](https://remix.run/docs/en/v1)
+## 组成
 
-## What's included
-
-- Remix
 - Hydrogen
+- Remix
 - Oxygen
 - Shopify CLI
-- ESLint
-- Prettier
-- GraphQL generator
-- TypeScript and JavaScript flavors
-- Minimal setup of components and routes
+- GraphQL 代码生成
+- ESLint 与 TypeScript / JavaScript 支持
 
-## Getting started
+## 开始
 
-**Requirements:**
-
-- Node.js version 16.14.0 or higher
+需要 Node.js 16.13 或更高版本。先在 `.env` 中填写商店域名与 Storefront API Token，再运行：
 
 ```bash
-npm create @shopify/hydrogen@latest -- --template hello-world
+npm install
+npm run dev
 ```
 
-Remember to update `.env` with your shop's domain and Storefront API token!
-
-## Building for production
+生产构建与本地预览：
 
 ```bash
 npm run build
+npm run preview
 ```
 
-## Local development
+开发资料见 [Hydrogen 文档](https://shopify.dev/docs/storefronts/headless/hydrogen) 与 [Remix 文档](https://remix.run/docs)。
 
-```bash
-npm run dev
-```
+## 许可
+
+原创代码与代码文档依据 [Apache License 2.0](./LICENSE) 发布；个人素材、品牌、游戏内容与第三方内容不在许可范围内。详见 [NOTICE](./NOTICE) 与 [LICENSE_SCOPE.md](./LICENSE_SCOPE.md)。
